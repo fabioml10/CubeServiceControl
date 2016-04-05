@@ -1,152 +1,45 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CubeServiceControlWeb.Login2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CubeServiceControlWeb.Default" %>
 
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        body{
-            background-color: #BEBEBE;
-        }
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            height: 182px;
-        }
-        .auto-style3 {
-            height: 101px;
-        }
-        .auto-style6 {
-            width: 198px;
-            text-align: center;
-        }
-        .auto-style7 {
-            height: 182px;
-            width: 550px;
-        }
-        .auto-style8 {
-            width: 550px;
-        }
-        .auto-style9 {
-            height: 182px;
-            width: 181px;
-        }
-        .auto-style11 {
-            height: 101px;
-            width: 181px;
-        }
-        .auto-style12 {
-            height: 101px;
-            width: 14px;
-        }
-        .auto-style16 {
-            text-align: center;
-            height: 23px;
-        }
-        .auto-style17 {
-            width: 181px;
-            text-align: right;
-            height: 42px;
-        }
-        .auto-style18 {
-            width: 14px;
-            text-align: left;
-            height: 35px;
-        }
-        .auto-style19 {
-            font-size: xx-large;
-        }
-        .auto-style20 {
-            width: 550px;
-            height: 23px;
-        }
-        .auto-style21 {
-            height: 23px;
-        }
-        .auto-style22 {
-            width: 14px;
-            height: 35px;
-        }
-        .auto-style27 {
-            font-size: small;
-        }
-        .auto-style28 {
-            width: 14px;
-            height: 42px;
-        }
-        .auto-style29 {
-            height: 42px;
-        }
-        .auto-style32 {
-            width: 181px;
-            height: 35px;
-            text-align: right;
-        }
-        .auto-style33 {
-            text-align: left;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Dark Login Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-        <table class="auto-style1">
-            <tr>
-                <td class="auto-style7"></td>
-                <td class="auto-style2" colspan="2"></td>
-                <td class="auto-style9"></td>
-                <td class="auto-style2"></td>
-            </tr>
-            <tr>
-                <td class="auto-style20"></td>
-                <td class="auto-style16" colspan="3">
-                    <asp:Label ID="tituloLbl" runat="server" Text="CUBE SERVICE CONTROL" CssClass="auto-style19" Font-Names="ZillahModernLine" Font-Size="45pt" Height="50px"></asp:Label>
-                    <br />
-                    <asp:Label ID="subTituloLbl" runat="server" Text="GERENCIAMENTO HOME OFFICE" Font-Size="7.2pt" Width="170px" Font-Names="Arial" Font-Overline="False"></asp:Label>
-                </td>
-                <td class="auto-style21"></td>
-            </tr>
-            <tr>
-                <td class="auto-style8" rowspan="4">&nbsp;</td>
-                <td class="auto-style6" rowspan="4">
-                    <asp:Image ID="Image1" runat="server" Height="195px" ImageUrl="~/img/lock01.png" Width="180px" />
-                </td>
-                <td class="auto-style12"></td>
-                <td class="auto-style11"></td>
-                <td class="auto-style3"></td>
-            </tr>
-            <tr>
-                <td class="auto-style22">
-                    <asp:Label ID="userLbl" runat="server" Text="Usuário:" CssClass="auto-style27" Font-Names="Arial"></asp:Label>
-                </td>
-                <td class="auto-style32">
-                    <asp:TextBox ID="userTxt" runat="server" Width="170px"></asp:TextBox>
-                </td>
-                <td class="auto-style33" rowspan="2">
-                    <asp:Label ID="resultadoLbl" runat="server" ForeColor="Red"></asp:Label>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style18">
-                    <asp:Label ID="passLbl" runat="server" Text="Senha:" CssClass="auto-style27" Font-Names="Arial"></asp:Label>
-                </td>
-                <td class="auto-style32">
-                    <asp:TextBox ID="passTxt" runat="server" Width="170px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style28"></td>
-                <td class="auto-style17">
-                    <asp:Button ID="enterBtn" runat="server" Text="Entar" Width="85px" Height="25" OnClick="enterBtn_Click"/>
-                </td>
-                <td class="auto-style29">&nbsp;</td>
-            </tr>
-        </table>
-    
-    </div>
-    </form>
+  <form method="post" action="index.html" class="login">
+    <p>
+      <label for="login">Email:</label>
+      <input type="text" name="login" id="login" value="name@example.com">
+    </p>
+
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" value="4815162342">
+    </p>
+
+    <p class="login-submit">
+      <button type="submit" class="login-button">Login</button>
+    </p>
+
+    <p class="forgot-password"><a href="index.html">Forgot your password?</a></p>
+  </form>
+
+  <section class="about">
+    <p class="about-links">
+      <a href="http://www.cssflow.com/snippets/dark-login-form" target="_parent">View Article</a>
+      <a href="http://www.cssflow.com/snippets/dark-login-form.zip" target="_parent">Download</a>
+    </p>
+    <p class="about-author">
+      &copy; 2012&ndash;2013 <a href="http://thibaut.me" target="_blank">Thibaut Courouble</a> -
+      <a href="http://www.cssflow.com/mit-license" target="_blank">MIT License</a><br>
+      Original PSD by <a href="http://365psd.com/day/2-234/" target="_blank">Rich McNabb</a>
+  </section>
 </body>
 </html>
