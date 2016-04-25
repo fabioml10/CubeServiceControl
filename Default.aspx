@@ -12,9 +12,6 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            height: 182px;
-        }
         .auto-style3 {
             height: 101px;
         }
@@ -22,16 +19,8 @@
             width: 198px;
             text-align: center;
         }
-        .auto-style7 {
-            height: 182px;
-            width: 550px;
-        }
         .auto-style8 {
-            width: 550px;
-        }
-        .auto-style9 {
-            height: 182px;
-            width: 181px;
+            width: 101px;
         }
         .auto-style11 {
             height: 101px;
@@ -59,7 +48,7 @@
             font-size: xx-large;
         }
         .auto-style20 {
-            width: 550px;
+            width: 101px;
             height: 23px;
         }
         .auto-style21 {
@@ -87,6 +76,17 @@
         .auto-style33 {
             text-align: left;
         }
+        .auto-style34 {
+            height: 100px;
+            width: 101px;
+        }
+        .auto-style35 {
+            height: 100px;
+        }
+        .auto-style36 {
+            height: 100px;
+            width: 181px;
+        }
     </style>
 </head>
 <body>
@@ -95,10 +95,10 @@
     
         <table class="auto-style1">
             <tr>
-                <td class="auto-style7"></td>
-                <td class="auto-style2" colspan="2"></td>
-                <td class="auto-style9"></td>
-                <td class="auto-style2"></td>
+                <td class="auto-style34"></td>
+                <td class="auto-style35" colspan="2"></td>
+                <td class="auto-style36"></td>
+                <td class="auto-style35"></td>
             </tr>
             <tr>
                 <td class="auto-style20"></td>
